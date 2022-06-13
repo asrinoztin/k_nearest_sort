@@ -34,9 +34,7 @@ def flow():  # in order to provide the program flow
         print_res(arr_sorted_quick, k, end_time_quick_sort)
         control(arr_sorted_quick)
 
-        arr = (
-            orgin_arr.copy()
-        )  # arr is changed (sorted) in quicksort and so, here it is re-assigned as the original one which also is sent to quick_sort()
+        arr = (orgin_arr.copy())  # arr is changed (sorted) in quicksort and so, here it is re-assigned as the original one which also is sent to quick_sort()
         end_time_heap_sort = time.time()
         arr_sorted_heap = min_heap_sort(arr, k + 1)
         time_arr_heap_sort.append(end_time_heap_sort)
@@ -47,9 +45,7 @@ def flow():  # in order to provide the program flow
     plot_time()
 
 
-def generate_arr(
-    i,
-):  # in order to create random arrays and the "k" values dependently on the array sizes being creted
+def generate_arr(i):  # in order to create random arrays and the "k" values dependently on the array sizes being creted
     global orgin_arr
     arr = []
 
