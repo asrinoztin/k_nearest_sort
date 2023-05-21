@@ -8,8 +8,11 @@ The unsorted array can be sorted efficiently by utilizing a Min-Heap data struct
 
 # Libraries & Dependencies
 Numpy
+
 Matplotlib.pyplot
+
 Time
+
 Random
 
 
